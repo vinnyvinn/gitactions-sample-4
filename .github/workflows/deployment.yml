@@ -67,5 +67,7 @@ jobs:
   information:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Code
+        uses: actions/checkout@v3
       - name: Run Custom action
         uses: ./.github/actions/deploy-s3-javascript
